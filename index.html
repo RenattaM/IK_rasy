@@ -1,151 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NÁZEV STRÁNKY</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jednoduchý moderní web — pro sestru</title>
+    <meta
+      name="description"
+      content="Jednoduchý, moderní a responzivní jednostránkový web v hnědo-krémovo-bílé paletě."
+    />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <!--Hlavička stránky-->
-    <header class="hlavicka">
-      <h1>Název stranky</h1>
-
-      <p>Krásné řasy v pohodlí vašeho domova</p>
+    <!-- Header / Navigation -->
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a
+          href="#home"
+          class="logo-circle"
+          aria-label="Domů"
+          title="Logo – nahraj později"
+        >
+          <span>LOGO</span>
+        </a>
+        <nav class="nav" aria-label="Hlavní navigace">
+          <button
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            aria-label="Otevřít menu"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 6H20M4 12H20M4 18H20"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+            Menu
+          </button>
+          <ul id="nav-menu" class="menu">
+            <li><a href="#o-mne">O mně</a></li>
+            <li><a href="#sluzby">Služby</a></li>
+            <li><a href="#cenik">Ceník</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <!--menu-->
-    <ul class="menu">
-      <li><a href="#omne">O mně</a></li>
-      <li><a href="#sluzby">Služby</a></li>
-      <li><a href="#cenik">Ceník</a></li>
-      <li><a href="#kontakt">Kontakt</a></li>
-    </ul>
-
-    <!--sekce o mě-->
-    <section class="O nás" id="omne">
-      <h2>O mně</h2>
-
-      <p>
-        Jmenuji se Iveta a věnuji se prodlužování a zahušťování řas. Moje práce
-        je pro mě vášní – každé oči si zaslouží být krásné a jedinečné.
-      </p>
-      <p>
-        Své služby poskytuji přímo u Vás doma – v prostředí, kde se cítíte
-        nejlépe a nemusíte nikam spěchat. Díky tomu si můžete užít pohodlí i
-        profesionální péči zároveň.
-      </p>
-      <p>
-        Specializuji se na umělé řasy..klasické, objemové / lash lifting a dbám
-        na to, aby výsledek působil přirozeně, elegantně
-      </p>
-      <p>
-        Těším se, až se potkáme a společně vykouzlíme pohled, který si
-        zamilujete.
-      </p>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <div class="eyebrow">Lorem ipsum</div>
+          <h1>Lorem ipsum dolor sit amet</h1>
+          <p class="lead">
+            Consectetur adipiscing elit. Integer facilisis, massa eget fermentum
+            feugiat, lorem ipsum dolor sit amet.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="#kontakt">Kontaktovat</a>
+            <a class="btn secondary" href="#sluzby">Zobrazit služby</a>
+          </div>
+        </div>
+        <aside class="hero-side">
+          <div class="hero-badge"><span>Vaše foto</span></div>
+          <p class="muted" style="margin-top: 10px">
+            Zástupný obrázek — vložte vlastní.
+          </p>
+        </aside>
+      </div>
     </section>
 
-    <!--sekce služby-->
-    <section class="sluzby" id="sluzby">
-      <h2>Služby</h2>
-      <h3>
-        Nabízím profesionální aplikaci řas přímo u Vás doma. Vyberte si styl,
-        který Vám bude nejvíce vyhovovat – od přirozeného zvýraznění po výrazný
-        objemový efekt.“
-      </h3>
-      <h3>Klasické prodloužení řas</h3>
-      <p>
-        Řasa na řasu, přirozený vzhled, ideální pro jemné zvýraznění pohledu.
-      </p>
-      <h3>Lash lifting & botox řas</h3>
-      <p>
-        Zvýraznění a natočení vlastních řas bez prodlužování. Výsledek působí
-        velmi přirozeně a vydrží několik týdnů.
-      </p>
-
-      <img src="obrazky/hory1.jpg" alt="hory" />
-      <img src="obrazky/hory2.jpg" alt="hory" />
-      <img src="obrazky/hory3.jpg" alt="hory" />
-      <img src="obrazky/hory4.jpg" alt="hory" />
-      <img src="obrazky/hory5.jpg" alt="hory" />
-      <img src="obrazky/hory6.jpg" alt="hory" />
-      <img src="obrazky/hory7.jpg" alt="hory" />
-      <img src="obrazky/hory8.jpg" alt="hory" />
-      <img src="obrazky/hory9.jpg" alt="hory" />
+    <!-- O mně -->
+    <section id="o-mne" class="section">
+      <div class="container">
+        <header class="hd">
+          <h2>O mně</h2>
+          <p class="muted">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </header>
+        <div class="about">
+          <article class="card">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+              risus. Suspendisse lectus tortor...
+            </p>
+          </article>
+          <div class="placeholder-img"><span>Foto / banner</span></div>
+        </div>
+      </div>
     </section>
 
-    <!--sekce Ceník-->
-    <section class="cenik" id="cenik">
-      <h2>Ceník</h2>
-
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos laborum,
-        tempora quae corporis ea maxime. Deleniti molestiae perferendis
-        voluptate, est, provident illo ex, similique autem reiciendis inventore
-        porro corrupti? Ipsa.
-      </p>
-
-      <h3>Orientační ceník služeb</h3>
-
-      <table>
-        <tr>
-          <th>Služba</th>
-          <th class="Cena">Cena</th>
-        </tr>
-        <tr>
-          <td>Lorem ipsum dolor</td>
-          <td class="Cena">1500 Kč</td>
-        </tr>
-        <tr>
-          <td>Lorem ipsum dolor</td>
-          <td class="Cena">300 Kč/hod</td>
-        </tr>
-        <tr>
-          <td>Lorem ipsum dolor</td>
-          <td class="Cena">700 Kč/hod</td>
-        </tr>
-        <tr>
-          <td>Lorem ipsum dolor</td>
-          <td class="Cena">2000 Kč/den</td>
-        </tr>
-      </table>
+    <!-- Služby -->
+    <section id="sluzby" class="section">
+      <div class="container">
+        <header class="hd">
+          <h2>Služby</h2>
+          <p class="muted">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </header>
+        <div class="grid-3">
+          <article class="card service">
+            <div class="title">Lorem ipsum</div>
+            <p>Dolor sit amet...</p>
+          </article>
+          <article class="card service">
+            <div class="title">Consectetur</div>
+            <p>Aliquam tincidunt mauris eu risus...</p>
+          </article>
+          <article class="card service">
+            <div class="title">Adipiscing elit</div>
+            <p>Maecenas fermentum...</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!--sekce kontakt-->
-    <section class="kontakt" id="kontakt">
-      <h2>Kontakt</h2>
-      <p>
-        Na krásné řasy nemusíte čekat – stačí mi napsat na
-        <a href="mailto:x@email.cz">email</a>, poslat zprávu na
-        <a href="https://www.facebook.com" target="_blank">Facebooku</a> nebo
-        <a href="https://www.facebook.com" target="_blank">Instagram</a>,
-        případně zavolat, a ráda přijedu až k Vám.
-      </p>
-
-      <h3>Oficiální kontakt</h3>
-      <p>
-        Iveta Kolářová<br />
-        Přerov<br />
-        750 02
-      </p>
-      <p>IČ: .............</p>
-      <p>
-        E-mail: <a href="mailto:adela@email.cz">x@email.cz</a> <br />
-        Mobil: +420 xxx xxx xxx
-      </p>
+    <!-- Ceník -->
+    <section id="cenik" class="section">
+      <div class="container">
+        <header class="hd">
+          <h2>Ceník</h2>
+          <p class="muted">Ceny jsou orientační — lorem ipsum.</p>
+        </header>
+        <div class="grid-3">
+          <article class="card price-card">
+            <h3 class="title">Lorem basic</h3>
+            <div class="price">690 Kč <small>/ služba</small></div>
+          </article>
+          <article class="card price-card">
+            <h3 class="title">Ipsum standard</h3>
+            <div class="price">990 Kč <small>/ služba</small></div>
+          </article>
+          <article class="card price-card">
+            <h3 class="title">Dolor premium</h3>
+            <div class="price">1290 Kč <small>/ služba</small></div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!--patička stránky-->
-    <footer class="paticka">
-      <p>© rok, Renata Markusová</p>
+    <!-- Kontakt -->
+    <section id="kontakt" class="section">
+      <div class="container">
+        <header class="hd">
+          <h2>Kontakt</h2>
+          <p class="muted">Jsme na sítích — napište jedním klikem.</p>
+        </header>
+        <aside class="card">
+          <div class="socials">
+            <a class="icon-btn" href="#" title="Facebook">Facebook</a>
+            <a class="icon-btn" href="#" title="Instagram">Instagram</a>
+            <a
+              class="icon-btn"
+              href="mailto:lorem@ipsum.cz"
+              title="Napsat e-mail"
+              >E-mail</a
+            >
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">© <span id="y"></span> Lorem Studio</div>
     </footer>
   </body>
 </html>
