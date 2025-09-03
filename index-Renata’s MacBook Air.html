@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jednoduchý moderní web — pro sestru</title>
+    <meta
+      name="description"
+      content="Jednoduchý, moderní a responzivní jednostránkový web v hnědo-krémovo-bílé paletě."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="logo" aria-label="Domů">LOGO</a>
+        <nav class="nav">
+          <button
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+          >
+            ☰
+          </button>
+          <ul id="nav-menu" class="menu">
+            <li><a href="#o-mne">O mně</a></li>
+            <li><a href="#sluzby">Služby</a></li>
+            <li><a href="#cenik">Ceník</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <div class="eyebrow">Lorem ipsum</div>
+          <h1>Lorem ipsum dolor sit amet</h1>
+          <p class="lead">
+            Consectetur adipiscing elit. Integer facilisis, massa eget fermentum
+            feugiat.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="#kontakt">Kontaktovat</a>
+            <a class="btn secondary" href="#sluzby">Zobrazit služby</a>
+          </div>
+        </div>
+        <aside class="hero-side">
+          <div class="hero-badge"><span>Vaše foto</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="o-mne" class="section">
+      <div class="container">
+        <h2>O mně</h2>
+        <div class="about">
+          <article class="card">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+              risus. Suspendisse lectus tortor...
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sluzby" class="section">
+      <div class="container">
+        <h2>Služby</h2>
+        <div class="grid-3">
+          <article class="card service">
+            <div class="title">Lorem ipsum</div>
+            <p>Dolor sit amet...</p>
+          </article>
+          <article class="card service">
+            <div class="title">Consectetur</div>
+            <p>Aliquam tincidunt mauris eu risus...</p>
+          </article>
+          <article class="card service">
+            <div class="title">Adipiscing elit</div>
+            <p>Maecenas fermentum...</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="cenik" class="section">
+      <div class="container">
+        <h2>Ceník</h2>
+        <div class="grid-3">
+          <article class="card price-card">
+            <h3>Lorem basic</h3>
+            <div class="price">690 Kč</div>
+          </article>
+          <article class="card price-card">
+            <h3>Ipsum standard</h3>
+            <div class="price">990 Kč</div>
+          </article>
+          <article class="card price-card">
+            <h3>Dolor premium</h3>
+            <div class="price">1290 Kč</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section">
+      <div class="container">
+        <h2>Kontakt</h2>
+        <div class="card">
+          <div class="socials">
+            <a class="icon-btn" href="#" title="Facebook">Facebook</a>
+            <a class="icon-btn" href="#" title="Instagram">Instagram</a>
+            <a class="icon-btn" href="mailto:lorem@ipsum.cz" title="E‑mail"
+              >E‑mail</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">© <span id="y"></span> Lorem Studio</div>
+    </footer>
+  </body>
+</html>
