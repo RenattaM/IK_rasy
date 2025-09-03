@@ -346,4 +346,5 @@ textarea {
 footer {
   padding: 28px 0 46px;
   color: var(--muted);
+  text-align: center;
 }
