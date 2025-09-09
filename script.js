@@ -1,17 +1,23 @@
-// Mobilní menu toggle + UX drobnosti
-const toggle = document.querySelector(".nav-toggle");
-const menu = document.getElementById("nav-menu");
-toggle.addEventListener("click", () => {
-  const open = toggle.getAttribute("aria-expanded") === "true";
-  toggle.setAttribute("aria-expanded", String(!open));
-  menu.classList.toggle("open");
-});
-// Zavřít menu po kliknutí na položku (na mobilu)
-menu.querySelectorAll("a").forEach((a) =>
+// Mobile menu toggle
+const burger = document.getElementById("burger");
+const menu = document.getElementById("menu");
+const yearSpan = document.getElementById("y");
+
+if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+if (burger && menu) {
+  burger.addEventListener("click", () => {
+    const isOpen = menu.classList.toggle("show");
+    burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+}
+
+// Zavření menu po kliknutí na odkaz
+menu?.querySelectorAll("a").forEach((a) => {
   a.addEventListener("click", () => {
-    menu.classList.remove("open");
-    toggle.setAttribute("aria-expanded", "false");
-  })
-);
-// Rok do patičky
-document.getElementById("y").textContent = new Date().getFullYear();
+    if (menu.classList.contains("show")) {
+      menu.classList.remove("show");
+      burger?.setAttribute("aria-expanded", "false");
+    }
+  });
+});

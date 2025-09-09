@@ -3,203 +3,206 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>řasy Iveta</title>
-    <meta name="description" content=" name="description" content="Jednoduchý,
-    moderní a responzivní jednostránkový web v hnědo-krémovo-bílé paletě." />
+    <title>Řasy & masáže až k vám domů – Přerov a okolí</title>
+    <meta
+      name="description"
+      content="Mobilní lash artist a relaxační masáže u vás doma – Přerov a okolí. Prodloužení řas, lash lifting & botox, doplnění řas, masáž hlavy, indická masáž, masáž obličeje."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
   </head>
   <body>
-    <!-- Header / Navigation -->
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a href="#home" class="logo" aria-label="Domů">LOGO</a>
-        <nav class="nav" aria-label="Hlavní navigace">
-          <button
-            class="nav-toggle"
-            aria-expanded="false"
-            aria-controls="nav-menu"
-            aria-label="Otevřít menu"
-          >
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path
-                d="M4 6H20M4 12H20M4 18H20"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
-            </svg>
-            Menu
-          </button>
-          <ul id="nav-menu" class="menu">
-            <li><a href="#o-mne">O mně</a></li>
-            <li><a href="#sluzby">Služby</a></li>
-            <li><a href="#cenik">Ceník</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-          </ul>
+    <!-- Top bar / Nav -->
+    <header class="topbar">
+      <div class="container nav">
+        <a href="#home" class="brand" aria-label="Domů">
+          <span class="logo" aria-hidden="true"></span>
+          <span class="brand-text">Studio I – řasy & masáže</span>
+        </a>
+
+        <nav id="menu" class="menu" aria-label="Hlavní navigace">
+          <a href="#o-mne">O mně</a>
+          <a href="#sluzby">Služby</a>
+          <a href="#cenik">Ceník</a>
+          <a href="#kontakt">Kontakt</a>
         </nav>
+
+        <button
+          id="burger"
+          class="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" />
+          </svg>
+        </button>
       </div>
     </header>
 
     <!-- Hero -->
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-card">
-          <h1>Krásné řasy v pohodlí vašeho domova</h1>
-          <p class="lead">
-            Na krásné řasy nemusíte čekat – stačí mi napsat, případně zavolat a
-            ráda přijedu až k Vám.
+    <section id="home" class="hero">
+      <div class="container hero-wrap">
+        <div class="hero-text">
+          <h1>Řasy & relax až k vám domů</h1>
+          <p>
+            Profesionální péče o řasy a uvolňující masáže přímo u vás –
+            <strong>Přerov a okolí</strong>. Žádné dojíždění, jen váš čas a
+            pohodlí.
           </p>
-          <div class="cta-row">
-            <a class="btn" href="#kontakt">Kontaktovat</a>
-            <a class="btn secondary" href="#sluzby">Zobrazit služby</a>
+          <div class="hero-cta">
+            <a class="cta" href="#kontakt">Kontakt</a>
+            <span class="sub">Objednání přes zprávu nebo telefon</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- O mně -->
-    <section id="o-mne" class="section">
-      <div class="container">
-        <header class="hd">
+    <section id="o-mne">
+      <div class="container grid-2">
+        <div>
           <h2>O mně</h2>
-        </header>
-        <div class="about">
-          <article class="card">
-            <div class="profile-photo">
-              <img src="foto.jpg" alt="Profilová fotografie" />
-            </div>
-
-            <p>
-              Jmenuji se Iveta a věnuji se prodlužování a zahušťování řas. Moje
-              práce je pro mě vášní – každé oči si zaslouží být krásné a
-              jedinečné.
-            </p>
-            <p>
-              Své služby poskytuji přímo u Vás doma – v prostředí, kde se cítíte
-              nejlépe a nemusíte nikam spěchat. Díky tomu si můžete užít pohodlí
-              i profesionální péči zároveň.
-            </p>
-            <p>
-              Specializuji se na klasické prodlužování, objemové řasy, lash
-              lifting, podle toho, co přesně bude dělat a dbám na to, aby
-              výsledek působil přirozeně, elegantně.
-            </p>
-            <p>
-              Těším se, až se potkáme a společně vykouzlíme pohled, který si
-              zamilujete.
-            </p>
-          </article>
+          <p>
+            Jmenuji se Iveta. Specializuji se na přirozeně krásné
+            <strong>prodloužení řas</strong>,
+            <strong>lash lifting & botox</strong> a jemné
+            <strong>relaxační masáže</strong> zaměřené na hlavu a obličej.
+            Přijedu za vámi domů – stačí si vybrat službu a domluvit termín.
+          </p>
+        </div>
+        <div class="card soft">
+          <ul class="check">
+            <li>Mobilní služby – Přerov a okolí</li>
+            <li>Šetrné techniky a hygienický postup</li>
+            <li>Individuální konzultace</li>
+            <li>Relaxační atmosféra u vás doma</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <!-- Služby -->
-    <section id="sluzby" class="section" aria-labelledby="sluzby-h">
+    <section id="sluzby">
       <div class="container">
-        <header class="hd">
-          <h2 id="sluzby-h">Služby</h2>
-        </header>
-        <div class="grid-3">
-          <article class="card service">
-            <div class="title">Klasické prodloužení řas</div>
+        <h2>Služby</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Prodloužení řas</h3>
             <p>
-              Řasa na řasu, přirozený vzhled, ideální pro jemné zvýraznění
-              pohledu.
+              Přirozený vzhled s důrazem na tvar oka. Elegantní a pohodlné
+              nošení.
             </p>
           </article>
-          <article class="card service">
-            <div class="title">Lash lifting & botox řas</div>
+          <article class="card">
+            <h3>Lash lifting & botox</h3>
+            <p>Šetrné natočení a vyživení vlastních řas pro svěží vzhled.</p>
+          </article>
+          <article class="card">
+            <h3>Doplňování řas</h3>
             <p>
-              Zvýraznění a natočení vlastních řas bez prodlužování. Výsledek
-              působí velmi přirozeně a vydrží několik týdnů.
+              Pravidelná údržba pro stále upravený look. Interval 3–4 týdny.
             </p>
           </article>
-          <article class="card service">
-            <div class="title">Doplnění řas</div>
-            <p>Udržení krásného vzhledu každé 3–4 týdny.</p>
+          <article class="card">
+            <h3>Masáž hlavy</h3>
+            <p>Uvolnění napětí šíje a skalpu, podpora relaxace.</p>
+          </article>
+          <article class="card">
+            <h3>Indická masáž hlavy</h3>
+            <p>
+              Tradiční technika na hlavu, šíji a ramena. Pomáhá proti stresu.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Masáž obličeje</h3>
+            <p>Jemná masáž pro svěží pleť a relaxaci.</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- Ceník -->
-    <section id="cenik" class="section" aria-labelledby="cenik-h">
+    <section id="cenik">
       <div class="container">
-        <header class="hd">
-          <h2 id="cenik-h">Ceník</h2>
-        </header>
-        <div class="grid-3">
-          <article class="card price-card">
-            <h3 class="title">Klasické prodloužení řas</h3>
-            <div class="price">690&nbsp;Kč <small>/ služba</small></div>
-            <p>Consectetur adipiscing elit. Integer facilisis massa eget.</p>
-          </article>
-          <article class="card price-card">
-            <h3 class="title">Lash lifting & botox řas</h3>
-            <div class="price">990&nbsp;Kč <small>/ služba</small></div>
-            <p>Sed non risus. Suspendisse lectus tortor, dignissim sit amet.</p>
-          </article>
-          <article class="card price-card">
-            <h3 class="title">Doplnění řas</h3>
-            <div class="price">1290&nbsp;Kč <small>/ služba</small></div>
-            <p>Cras elementum ultrices diam. Maecenas ligula massa.</p>
-          </article>
+        <h2>Ceník</h2>
+        <div class="price">
+          <div class="price-row">
+            <span>Prodloužení řas</span><span>od 900 Kč</span>
+          </div>
+          <div class="price-row">
+            <span>Lash lifting & botox</span><span>od 650 Kč</span>
+          </div>
+          <div class="price-row">
+            <span>Doplňování řas</span><span>od 600 Kč</span>
+          </div>
+          <div class="price-row">
+            <span>Masáž hlavy</span><span>od 450 Kč</span>
+          </div>
+          <div class="price-row">
+            <span>Indická masáž hlavy</span><span>od 550 Kč</span>
+          </div>
+          <div class="price-row">
+            <span>Masáž obličeje</span><span>od 550 Kč</span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Kontakt -->
-    <section id="kontakt" class="section" aria-labelledby="kontakt-h">
-      <div class="container">
-        <header class="hd">
-          <h2 id="kontakt-h">Kontakt</h2>
-        </header>
-        <div class="grid-3">
-          <aside class="card">
-            <p>
-              <strong>Iveta Kolářová</strong><br />
-              Přerov
-            </p>
-
-            <p class="muted">IČ: 01234567</p>
-            <hr
-              style="
-                border: none;
-                border-top: 1px solid rgba(0, 0, 0, 0.08);
-                margin: 12px 0;
-              "
-            />
-            <p>
-              📞 <a href="tel:+420000000000">+420 000 000 000</a><br />
-              ✉️ <a href="mailto:lorem@ipsum.cz">lorem@ipsum.cz</a><br />
-              📷 <a href="#">@instagram</a><br />
-              📷 <a href="#">@facebook</a>
-            </p>
-            <p>
-              Prodlužování a zahušťování řas v Přerově a okolí – napište mi
-              zprávu, e-mail nebo zavolejte a domluvíme se.
-            </p>
-          </aside>
+    <section id="kontakt">
+      <div class="container grid-2">
+        <div>
+          <h2>Kontakt</h2>
+          <p>
+            Mobilní péče v <strong>Přerově a okolí</strong>. Objednání je
+            jednoduché – napište zprávu nebo zavolejte.
+          </p>
+          <ul class="contact">
+            <li>
+              <strong>Telefon:</strong>
+              <a href="tel:+420000000000">+420 000 000 000</a>
+            </li>
+            <li>
+              <strong>E-mail:</strong>
+              <a href="mailto:email@domena.cz">email@domena.cz</a>
+            </li>
+          </ul>
+          <div class="social">
+            <a class="icon" href="#" target="_blank" aria-label="Instagram"
+              >IG</a
+            >
+            <a class="icon" href="#" target="_blank" aria-label="Facebook"
+              >FB</a
+            >
+          </div>
+        </div>
+        <div class="card soft">
+          <h3>Tipy pro pohodlí</h3>
+          <ul class="bullets">
+            <li>Pohodlné místo k lehnutí.</li>
+            <li>Dobré světlo nebo zásuvka pro lampu.</li>
+            <li>Bez řasenky v den aplikace/doplnění.</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <footer>
-      <div class="container">
-        © <span id="y"></span> Iveta Kolářová — všechna práva vyhrazena.
+    <footer class="footer">
+      <div class="container foot">
+        <p>© <span id="y"></span> Studio I – řasy & masáže • Přerov a okolí</p>
+        <a href="#home" class="top">Nahoru ↑</a>
       </div>
     </footer>
+
+    <script src="app.js"></script>
   </body>
 </html>
